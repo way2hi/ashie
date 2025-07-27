@@ -27,14 +27,23 @@
   <div class="m-4 p-4 bg-[#111213] max-w-auto pixel-corners text-xl tracking-wide pr-15px">
     <h1 class="text-2xl font-bold h-auto text-center tracking-wider">Hi, I'm Ashe! :3</h1>
     <div>
-      <a href="https://ko-fi.com/asheluvsu" target="_blank" class="md:text-2xl font-bold underline text-[#e9ded1] w-fit tracking-wider">
-      <div class="shadow-lg inset-shadow-sm inset-shadow-gray-800 bg-gray-700 shadow-gray-800 rounded-lg p-4 mt-2 mb-4 items-center">
+      <a href="https://ko-fi.com/asheluvsu" target="_blank" class="md:text-2xl font-bold hover:underline text-[#e9ded1] w-fit tracking-wider">
+      <div class="shadow-md inset-shadow-sm inset-shadow-gray-800 bg-gray-700 shadow-gray-800 text-shadow-sm text-shadow-gray-800 rounded-lg p-4 mt-2 mb-4 items-center">
       <li class="block m-auto pt-2 flex align-middle w-fit">
             <img class="mr-4" src="Ko-fi_HEART.gif" style="width:32px;height:32px;">
             Support me on Ko-fi!
           </li>
       </div>
-      </a>
+    </a>
+      <div class="mb-2 gap-2 text-[#e9ded1] flex md:w-md max-w-md rounded-lg overflow-hidden">
+        <div id="cover"><img class="rounded-lg" id="album-cover" width="128px"></div>
+        <div class="flex flex-col m-2 justify-center gap-2">
+          <p class="hover:underline font-bold" id="track"></p>
+          <p class="hover:underline" id="artist"></p>
+          <p class="hover:underline" id="date"></p>
+        </div>
+        </div>
+      </div>
       <div>
         <h2 class="zig underline decoration-dashed ml-2">about</h2>
         <ul class="list-disc ml-4">
@@ -63,7 +72,7 @@
         <h2 class="zig underline decoration-dashed ml-2 text-shadow-lg">socials</h2>
         <ul class="list-disc">
           <li class="pt-2 flex align-middle">
-            <a href="https://discord.com/users/1140359188111962183" target="_blank" class="flex underline text-[#5862F2]">
+            <a href="https://discord.com/users/1140359188111962183" target="_blank" class="flex hover:underline text-[#5862F2]">
             <svg class="mr-2 p-1" width="32px" height="32px" viewBox="0 -28.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
                 <g>
                     <path d="M216.856339,16.5966031 C200.285002,8.84328665 182.566144,3.2084988 164.041564,0 C161.766523,4.11318106 159.108624,9.64549908 157.276099,14.0464379 C137.583995,11.0849896 118.072967,11.0849896 98.7430163,14.0464379 C96.9108417,9.64549908 94.1925838,4.11318106 91.8971895,0 C73.3526068,3.2084988 55.6133949,8.86399117 39.0420583,16.6376612 C5.61752293,67.146514 -3.4433191,116.400813 1.08711069,164.955721 C23.2560196,181.510915 44.7403634,191.567697 65.8621325,198.148576 C71.0772151,190.971126 75.7283628,183.341335 79.7352139,175.300261 C72.104019,172.400575 64.7949724,168.822202 57.8887866,164.667963 C59.7209612,163.310589 61.5131304,161.891452 63.2445898,160.431257 C105.36741,180.133187 151.134928,180.133187 192.754523,160.431257 C194.506336,161.891452 196.298154,163.310589 198.110326,164.667963 C191.183787,168.842556 183.854737,172.420929 176.223542,175.320965 C180.230393,183.341335 184.861538,190.991831 190.096624,198.16893 C211.238746,191.588051 232.743023,181.531619 254.911949,164.955721 C260.227747,108.668201 245.831087,59.8662432 216.856339,16.5966031 Z M85.4738752,135.09489 C72.8290281,135.09489 62.4592217,123.290155 62.4592217,108.914901 C62.4592217,94.5396472 72.607595,82.7145587 85.4738752,82.7145587 C98.3405064,82.7145587 108.709962,94.5189427 108.488529,108.914901 C108.508531,123.290155 98.3405064,135.09489 85.4738752,135.09489 Z M170.525237,135.09489 C157.88039,135.09489 147.510584,123.290155 147.510584,108.914901 C147.510584,94.5396472 157.658606,82.7145587 170.525237,82.7145587 C183.391518,82.7145587 193.761324,94.5189427 193.539891,108.914901 C193.539891,123.290155 183.391518,135.09489 170.525237,135.09489 Z" fill="#5865F2" fill-rule="nonzero">
@@ -75,17 +84,17 @@
             <p class="ml-2">please add me,,</p>
           </li>
           <li class="pt-2 flex align-middle">
-            <a href="https://twitter.com/way2hi__" target="_blank" class="flex underline text-[#1DA1F2]">
+            <a href="https://twitter.com/way2hi__" target="_blank" class="flex hover:underline text-[#1DA1F2]">
             <svg class="mr-2" fill="#1DA1F2" width="32px" height="32px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" stroke="#1DA1F2"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M11.919 24.94c-2.548 0-4.921-.747-6.919-2.032a9.049 9.049 0 0 0 6.681-1.867 4.512 4.512 0 0 1-4.215-3.137c.276.054.559.082.848.082.412 0 .812-.056 1.193-.156a4.519 4.519 0 0 1-3.622-4.425v-.059a4.478 4.478 0 0 0 2.042.564 4.507 4.507 0 0 1-2.008-3.758c0-.824.225-1.602.612-2.268a12.811 12.811 0 0 0 9.303 4.715 4.517 4.517 0 0 1 7.692-4.115 9.107 9.107 0 0 0 2.866-1.094 4.542 4.542 0 0 1-1.983 2.498 9.08 9.08 0 0 0 2.592-.71 9.283 9.283 0 0 1-2.252 2.337c.008.193.014.388.014.583-.001 5.962-4.542 12.843-12.844 12.842"></path></g></svg>
             twitter</a>
           </li>
           <li class="pt-2 flex align-middle">
-            <a href="https://github.com/way2hi" target="_blank" class="flex underline">
+            <a href="https://github.com/way2hi" target="_blank" class="flex hover:underline">
             <svg class="mr-2 p-1" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 98 98"><path fill-rule="evenodd" clip-rule="evenodd" d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z" fill="#cccdce"/></svg>
             github</a>
           </li>
           <li class="pt-2 flex align-middle">
-            <a href="https://youtube.com/@ashedidthat" target="_blank" class="flex underline text-[#ff0033]">
+            <a href="https://youtube.com/@ashedidthat" target="_blank" class="flex hover:underline text-[#ff0033]">
             <svg class="mr-2 p-1" width="32px" height="32px" viewBox="0 0 28.57 20" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
               <g>
                 <path d="M27.9727 3.12324C27.6435 1.89323 26.6768 0.926623 25.4468 0.597366C23.2197 2.24288e-07 14.285 0 14.285 0C14.285 0 5.35042 2.24288e-07 3.12323 0.597366C1.89323 0.926623 0.926623 1.89323 0.597366 3.12324C2.24288e-07 5.35042 0 10 0 10C0 10 2.24288e-07 14.6496 0.597366 16.8768C0.926623 18.1068 1.89323 19.0734 3.12323 19.4026C5.35042 20 14.285 20 14.285 20C14.285 20 23.2197 20 25.4468 19.4026C26.6768 19.0734 27.6435 18.1068 27.9727 16.8768C28.5701 14.6496 28.5701 10 28.5701 10C28.5701 10 28.5677 5.35042 27.9727 3.12324Z" fill="#FF0000"/>
@@ -95,7 +104,7 @@
             youtube</a>
           </li>
           <li class="pt-2 flex align-middle">
-            <a href="https://instagram.com/ashedidthat" target="_blank" class="flex underline text-[#e639da]">
+            <a href="https://instagram.com/ashedidthat" target="_blank" class="flex hover:underline text-[#e639da]">
             <svg class="mr-2 p-1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 132 132" xmlns:xlink="http://www.w3.org/1999/xlink">
               <defs>
                 <linearGradient id="b">
@@ -120,9 +129,10 @@
           </li>
         </ul>
       </div>
-      <img class="m-auto block" src="https://media1.tenor.com/m/dt9XW6bBzuEAAAAd/puppy-cuteness-aggression.gif" style="width:50%;height:50%;">
     </div>
   </div>
   <div class="md:hidden"> </div>
+  
+  <script src="script.js"></script>
 </body>
 </html>
