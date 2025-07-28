@@ -39,6 +39,7 @@ var artist = last_track.artist['#text']
 var url_ = new URL(trackLink)
 var partPaths = url_.pathname.split('/');
 var artistLink = `${url_.origin}/music/${partPaths[2]}`;
+var albumLink = `${url_.origin}/music/${partPaths[2]}/${last_track.album['#text']}`;
 let relative_time = null
 if (last_track.date) {
     var unix_date = last_track.date.uts
@@ -50,6 +51,7 @@ var imageLink = last_track.image[2]["#text"]
 
 trackElem = document.getElementById('track')
 artistElem = document.getElementById('artist')
+albumElem = document.getElementById('cover')
 dateElem = document.getElementById('date')
 nowplayingElem = document.getElementById('now-playing')
 albumcoverElem = document.getElementById('album-cover')
@@ -71,8 +73,18 @@ userLinkElem.href = "https://www.last.fm/user/" + username
 userLinkElem.target = "_blank"
 userLinkElem.textContent = (relative_time != null) ? relative_time : "now playing!"
 
+albumLinkElem = document.createElement('a')
+albumLinkElem.id = "album"
+albumLinkElem.href = albumLink
+albumLinkElem.target = "_blank"
+
+while (albumElem.firstChild) {
+    albumLinkElem.appendChild(albumElem.firstChild)
+}
+
 trackElem.appendChild(trackLinkElem)
 artistElem.appendChild(artistLinkElem)
+albumElem.appendChild(albumLinkElem)
 dateElem.appendChild(userLinkElem)
 albumcoverElem.src = imageLink
 
