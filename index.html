@@ -10,11 +10,12 @@
   <meta property="og:description" content="meow :3" />
   <meta property="og:url" content="https://ashie.diy" />
   <meta property="og:image" content="https://ashie.diy/icon.jpg" />
-  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:card" content="summary" />
   <meta property="twitter:title" content="ashe" />
   <meta property="twitter:description" content="meow :3" />
   <meta property="twitter:url" content="https://ashie.diy" />
   <meta property="twitter:image" content="https://ashie.diy/icon.jpg" />
+  <meta name="theme-color" content="#161718" />
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -23,7 +24,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <title>ashe</title>
 </head>
-<body class="m-0 p-0 bg-[#161718] text-[#cccdce] ticketing flex flex-col items-center h-screen">
+<body class="m-0 p-0 bg-[#161718] text-[#cccdce] ticketing flex md:flex-row flex-col h-screen md:justify-center">
   <div class="m-4 p-4 bg-[#111213] max-w-auto pixel-corners text-xl tracking-wide pr-15px">
     <h1 class="text-2xl font-bold h-auto text-center tracking-wider">Hi, I'm Ashe! :3</h1>
     <div>
@@ -35,6 +36,7 @@
           </li>
       </div>
     </a>
+    <div class="text-sm font-bold text-[#cccdce] mb-2 uppercase tracking-wide">Last played</div>
       <div class="mb-2 gap-2 text-[#e9ded1] flex md:w-md max-w-md rounded-lg">
         <div class="relative group w-fit" id="cover">
           <img class="rounded-lg hover:scale-105 hover:grayscale hover:brightness-70 hover:contrast-70 transition-all duration-150" id="album-cover" width="128px" loading="lazy">
@@ -50,8 +52,6 @@
           <p class="hover:underline" id="date"></p>
         </div>
         </div>
-      </div>
-      <div>
         <h2 class="zig underline decoration-dashed ml-2">about</h2>
         <ul class="list-disc ml-4">
           <li>16 years old</li>
@@ -138,6 +138,13 @@
       </div>
     </div>
   </div>
+  <!--<div class="m-4 p-4 bg-[#111213] h-fit max-w-auto pixel-corners text-xl tracking-wide pr-15px">
+    <h1 class="zig text-2xl font-bold h-auto text-center tracking-wider">Discord status</h1>
+    <div class="bg-[#111213] p-4 rounded-lg shadow-md">
+        <div id="discord-content">
+            <div class="text-center text-gray-400 italic">Loading Discord activity...</div>
+        </div>
+    </div>-->
   <div class="md:hidden"> </div>
   
   <script src="script.js"></script>
