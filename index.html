@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="title" content="ashe" />
+  <meta name="description" content="meow :3" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="ashe" />
+  <meta property="og:description" content="meow :3" />
+  <meta property="og:url" content="https://ashie.diy" />
+  <meta property="og:image" content="https://ashie.diy/icon.jpg" />
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:title" content="ashe" />
+  <meta property="twitter:description" content="meow :3" />
+  <meta property="twitter:url" content="https://ashie.diy" />
+  <meta property="twitter:image" content="https://ashie.diy/icon.jpg" />
+  <meta name="theme-color" content="#161718" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="color-scheme" content="light dark">
+  <title>ashe</title>
+  <style>
+    body {
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        margin-left: 2rem;
+    }
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .tooltip:hover::after {
+        content: attr(aria-label);
+        position: absolute;
+        bottom: 100%;
+        left: 20%;
+        transform: translateX(-20%);
+        background: #333;
+        color: #fff;
+        padding: 5px;
+        border-radius: 4px;
+        white-space: nowrap;
+        z-index: 10;
+        transition: all 0.2s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+    <h1>hi im ashe</h1>
+    <p>im 16</p>
+    <div style="display: flex; flex-direction: column; line-height: 0%;">
+        <p><a href="https://discord.com/users/1140359188111962183" target="_blank">discord</a></p>
+        <p><a href="https://twitter.com/way2hi__" target="_blank">twitter</a></p>
+        <p><a href="https://www.instagram.com/blowntranny" target="_blank">instagram</a></p>
+        <p><a href="https://youtube.com/@ashedidthat" target="_blank">youtube</a></p>
+        <p><a href="https://github.com/way2hi" target="_blank">github</a></p>
+    </div>
+    <p>donate</p>
+    <a href="https://ko-fi.com/asheluvsu" target="_blank">ko-fi</a>
+    <p>crypto</p>
+    <div style="display: flex; flex-direction: column; line-height: 0%;">
+        <p class="tooltip" onclick="copy(1)" aria-label="LR6Pv3qwncjvjzo7oqe35DvmFSEktdPVP7">click to copy LTC address</p>
+        <p class="tooltip" onclick="copy(2)" aria-label="4BAXX6Pp5CqbmUPVJd4LYCVMKeHdo2UazBfrxz2JcU2EZs1nWEPSuuiJf7WKS6fSeEdCpGXBFaxKFUEahMhYjPPe96GW6aJ">click to copy XMR address</p>
+        <p class="tooltip" onclick="copy(3)" aria-label="bc1qh5q8ld9jvl83cgzy928wa5ht467nenteu6937g">click to copy BTC address</p>
+        <p class="tooltip" onclick="copy(4)" aria-label="0xc049ce387AE7C6cd51dC3178106842fc07FE5093">click to copy ETH address</p>
+        <p class="tooltip" onclick="copy(5)" aria-label="HZfHLU37TBhKEE9XX63CmZpTGELdGh7prKdJRebJe9Rq">click to copy SOL address</p>
+    </div>
+    
+    <script>
+        function copy(int) {
+            if (int==1) {
+                navigator.clipboard.writeText("LR6Pv3qwncjvjzo7oqe35DvmFSEktdPVP7");
+            }
+            if (int==2) {
+                navigator.clipboard.writeText("4BAXX6Pp5CqbmUPVJd4LYCVMKeHdo2UazBfrxz2JcU2EZs1nWEPSuuiJf7WKS6fSeEdCpGXBFaxKFUEahMhYjPPe96GW6aJ");
+            }
+            if (int==3) {
+                navigator.clipboard.writeText("bc1qh5q8ld9jvl83cgzy928wa5ht467nenteu6937g");
+            }
+            if (int==4) {
+                navigator.clipboard.writeText("0xc049ce387AE7C6cd51dC3178106842fc07FE5093");
+            }
+            if (int==5) {
+                navigator.clipboard.writeText("HZfHLU37TBhKEE9XX63CmZpTGELdGh7prKdJRebJe9Rq");
+            }
+            alert("copied");
+        }
+    </script>
+</body>
+</html>
